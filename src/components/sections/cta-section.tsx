@@ -179,7 +179,7 @@ export function CtaSection() {
                   <div className="text-sm text-muted-foreground">Years Experience</div>
                 </div>
                 <div className="space-y-2">
-                  <div className="text-2xl font-bold text-primary">50+</div>
+                  <div className="text-2xl font-bold text-primary">180+</div>
                   <div className="text-sm text-muted-foreground">Projects Completed</div>
                 </div>
                 <div className="space-y-2">

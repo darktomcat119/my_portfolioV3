@@ -43,7 +43,7 @@ const stats = [
   },
   {
     icon: Users,
-    value: '50+',
+    value: '180+',
     label: 'Projects Completed',
     description: 'Across various industries'
   },
