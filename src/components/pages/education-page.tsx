@@ -92,7 +92,7 @@ export function EducationPage() {
 
   const totalCertifications = certifications.length
   const currentYear = new Date().getFullYear()
-  const yearsOfLearning = currentYear - 2013 // Since first education entry
+  const yearsOfLearning = currentYear - 2014 // Since first education entry
 
   return (
     <div className="min-h-screen">
@@ -106,29 +106,29 @@ export function EducationPage() {
             transition={{ duration: 0.6 }}
           >
             <h1 className="text-4xl font-bold tracking-tight sm:text-5xl">
-              Education & <span className="gradient-text">Certifications</span>
+              <span className="gradient-text">Education</span>
             </h1>
             <p className="text-lg text-muted-foreground max-w-3xl mx-auto">
-              My journey of continuous learning and professional development. 
-              From formal education to industry certifications, I believe in staying current with technology.
+              My educational background and continuous learning journey. 
+              I believe in staying current with technology and continuously improving my skills.
             </p>
             
             {/* Quick Stats */}
             <div className="grid grid-cols-2 gap-4 max-w-lg mx-auto sm:grid-cols-4">
               <div className="text-center">
                 <div className="text-2xl font-bold text-primary">{educationItems.length}</div>
-                <div className="text-sm text-muted-foreground">Degrees</div>
+                <div className="text-sm text-muted-foreground">Degree</div>
               </div>
               <div className="text-center">
-                <div className="text-2xl font-bold text-primary">{totalCertifications}</div>
-                <div className="text-sm text-muted-foreground">Certifications</div>
+                <div className="text-2xl font-bold text-primary">4</div>
+                <div className="text-sm text-muted-foreground">Years of Study</div>
               </div>
               <div className="text-center">
                 <div className="text-2xl font-bold text-primary">{yearsOfLearning}+</div>
                 <div className="text-sm text-muted-foreground">Years Learning</div>
               </div>
               <div className="text-center">
-                <div className="text-2xl font-bold text-primary">3.8</div>
+                <div className="text-2xl font-bold text-primary">3.7</div>
                 <div className="text-sm text-muted-foreground">GPA</div>
               </div>
             </div>
