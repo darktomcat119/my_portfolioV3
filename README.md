@@ -165,9 +165,8 @@ This is a personal portfolio project. For suggestions or feedback, please contac
 
 ## 📞 Contact
 
-- **Email**: vladislav.khmelnytsky@email.com
-- **LinkedIn**: [linkedin.com/in/vladislav-khmelnytsky](https://linkedin.com/in/vladislav-khmelnytsky)
-- **GitHub**: [github.com/vladislav-khmelnytsky](https://github.com/vladislav-khmelnytsky)
+- **Email**: courage020119@gmail.com
+- **GitHub**: [github.com/darktomcat119](https://github.com/darktomcat119)
 
 ---
 
