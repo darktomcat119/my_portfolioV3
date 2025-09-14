@@ -70,13 +70,6 @@ const ctaOptions = [
     href: '/contact',
     variant: 'outline' as const
   },
-  {
-    title: 'Download Resume',
-    description: 'View my detailed resume',
-    icon: Download,
-    href: '/resume/Vladislav_Khmelnytsky_Resume.pdf',
-    variant: 'secondary' as const
-  }
 ]
 
 export function CtaSection() {
