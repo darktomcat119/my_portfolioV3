@@ -74,7 +74,7 @@ const ctaOptions = [
     title: 'Download Resume',
     description: 'View my detailed resume',
     icon: Download,
-    href: '/resume.pdf',
+    href: '/resume/Vladislav_Khmelnytsky_Resume.pdf',
     variant: 'secondary' as const
   }
 ]

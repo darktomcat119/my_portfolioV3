@@ -332,7 +332,7 @@ export function ExperiencePage() {
                     </a>
                   </Button>
                   <Button asChild variant="outline">
-                    <a href="/resume.pdf" download>
+                    <a href="/resume/Vladislav_Khmelnytsky_Resume.pdf" download>
                       Download Resume
                     </a>
                   </Button>
