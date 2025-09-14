@@ -56,7 +56,7 @@ export const metadata: Metadata = {
     title: 'Vladislav Khmelnytsky - Senior Full-Stack Developer',
     description: 'Senior Full-Stack Developer specializing in MERN Stack, Laravel, AI Automation, and DevOps.',
     images: ['/og-image.jpg'],
-    creator: '@vladislav_dev'
+    creator: '@courage119'
   },
   robots: {
     index: true,

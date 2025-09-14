@@ -4,24 +4,20 @@
  */
 
 import Link from 'next/link'
-import { Github, Linkedin, Twitter, Mail, Phone, MapPin } from 'lucide-react'
+import { Github, MessageSquare, Mail, Phone, MapPin } from 'lucide-react'
 import { cn } from '@/lib/utils'
+import personalData from '@/data/personal.json'
 
 const socialLinks = [
   {
     name: 'GitHub',
-    href: 'https://github.com/vladislav-khmelnytsky',
+    href: personalData.contact.github,
     icon: Github
   },
   {
-    name: 'LinkedIn',
-    href: 'https://linkedin.com/in/vladislav-khmelnytsky',
-    icon: Linkedin
-  },
-  {
-    name: 'Twitter',
-    href: 'https://twitter.com/vladislav_dev',
-    icon: Twitter
+    name: 'Discord',
+    href: `https://discord.com/users/${personalData.contact.discord}`,
+    icon: MessageSquare
   }
 ]
 
@@ -58,24 +54,11 @@ export function Footer() {
                 <div className="flex items-center space-x-2 text-sm text-muted-foreground">
                   <Mail className="h-4 w-4" />
                   <a 
-                    href="mailto:vladislav.khmelnytsky@email.com"
+                    href={`mailto:${personalData.contact.email}`}
                     className="hover:text-primary transition-colors"
                   >
-                    vladislav.khmelnytsky@email.com
+                    {personalData.contact.email}
                   </a>
-                </div>
-                <div className="flex items-center space-x-2 text-sm text-muted-foreground">
-                  <Phone className="h-4 w-4" />
-                  <a 
-                    href="tel:+15551234567"
-                    className="hover:text-primary transition-colors"
-                  >
-                    +1 (555) 123-4567
-                  </a>
-                </div>
-                <div className="flex items-center space-x-2 text-sm text-muted-foreground">
-                  <MapPin className="h-4 w-4" />
-                  <span>San Francisco, CA</span>
                 </div>
               </div>
             </div>
@@ -146,8 +129,6 @@ export function Footer() {
               </p>
               <div className="flex items-center space-x-4 text-sm text-muted-foreground">
                 <span>Built with Next.js & TypeScript</span>
-                <span>•</span>
-                <span>Powered by AI</span>
               </div>
             </div>
           </div>

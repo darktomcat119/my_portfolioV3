@@ -158,5 +158,117 @@
     "level": "advanced",
     "yearsOfExperience": 3,
     "description": "Utility-first CSS framework for rapid UI development"
+  },
+  {
+    "id": "php",
+    "name": "PHP",
+    "category": "backend",
+    "level": "expert",
+    "yearsOfExperience": 6,
+    "description": "Server-side scripting language for web development"
+  },
+  {
+    "id": "python",
+    "name": "Python",
+    "category": "backend",
+    "level": "advanced",
+    "yearsOfExperience": 4,
+    "description": "Versatile programming language for web development, AI, and automation"
+  },
+  {
+    "id": "django",
+    "name": "Django",
+    "category": "backend",
+    "level": "advanced",
+    "yearsOfExperience": 3,
+    "description": "High-level Python web framework for rapid development"
+  },
+  {
+    "id": "fastapi",
+    "name": "FastAPI",
+    "category": "backend",
+    "level": "advanced",
+    "yearsOfExperience": 2,
+    "description": "Modern, fast web framework for building APIs with Python"
+  },
+  {
+    "id": "aws-lambda",
+    "name": "AWS Lambda",
+    "category": "devops",
+    "level": "advanced",
+    "yearsOfExperience": 3,
+    "description": "Serverless compute service for running code without provisioning servers"
+  },
+  {
+    "id": "blockchain",
+    "name": "Blockchain Development",
+    "category": "blockchain",
+    "level": "advanced",
+    "yearsOfExperience": 3,
+    "description": "Web3, Solidity, smart contracts, DApps, trading bots, Hardhat, DeFi"
+  },
+  {
+    "id": "web3",
+    "name": "Web3",
+    "category": "blockchain",
+    "level": "advanced",
+    "yearsOfExperience": 3,
+    "description": "Decentralized web technologies and blockchain integration"
+  },
+  {
+    "id": "smart-contracts",
+    "name": "Smart Contracts",
+    "category": "blockchain",
+    "level": "advanced",
+    "yearsOfExperience": 3,
+    "description": "Self-executing contracts with terms directly written into code"
+  },
+  {
+    "id": "dapp",
+    "name": "DApp Development",
+    "category": "blockchain",
+    "level": "advanced",
+    "yearsOfExperience": 3,
+    "description": "Decentralized application development on blockchain platforms"
+  },
+  {
+    "id": "trading-bots",
+    "name": "Trading Bots",
+    "category": "blockchain",
+    "level": "intermediate",
+    "yearsOfExperience": 2,
+    "description": "Automated cryptocurrency trading systems and algorithms"
+  },
+  {
+    "id": "hardhat",
+    "name": "Hardhat",
+    "category": "blockchain",
+    "level": "advanced",
+    "yearsOfExperience": 2,
+    "description": "Development environment for Ethereum smart contracts"
+  },
+  {
+    "id": "defi",
+    "name": "DeFi",
+    "category": "blockchain",
+    "level": "advanced",
+    "yearsOfExperience": 2,
+    "description": "Decentralized Finance protocols and applications"
+  },
+  {
+    "id": "tensorflow",
+    "name": "TensorFlow",
+    "category": "ai",
+    "level": "intermediate",
+    "yearsOfExperience": 2,
+    "description": "Open-source machine learning framework for AI applications"
+  },
+  {
+    "id": "artificial-intelligence",
+    "name": "Artificial Intelligence",
+    "category": "ai",
+    "level": "intermediate",
+    "yearsOfExperience": 2,
+    "description": "Machine learning, deep learning, and AI model development"
   }
 ]

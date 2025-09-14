@@ -3,7 +3,7 @@
 import { useState, useEffect, useCallback } from 'react'
 import { Dialog, DialogContent, DialogHeader, DialogTitle } from '@/components/ui/dialog'
 import { Button } from '@/components/ui/button'
-import { ChevronLeft, ChevronRight, X } from 'lucide-react'
+import { ChevronLeft, ChevronRight } from 'lucide-react'
 import Image from 'next/image'
 import projectsData from '@/data/projects.json'
 
@@ -78,16 +78,6 @@ export function ProjectImageModal({ isOpen, onClose, projectUrl, projectTitle }:
         </DialogHeader>
         
         <div className="relative">
-          {/* Close button */}
-          <Button
-            variant="ghost"
-            size="icon"
-            className="absolute top-4 right-4 z-10 bg-background/80 hover:bg-background"
-            onClick={onClose}
-          >
-            <X className="h-4 w-4" />
-          </Button>
-
           {isLoading ? (
             <div className="flex items-center justify-center h-96">
               <div className="animate-spin rounded-full h-8 w-8 border-b-2 border-primary"></div>

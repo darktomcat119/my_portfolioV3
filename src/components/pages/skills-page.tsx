@@ -14,6 +14,7 @@ import { Button } from '@/components/ui/button'
 import { cn, getSkillLevelColor, getSkillLevelBgColor } from '@/lib/utils'
 import skillsData from '@/data/skills.json'
 import type { Skill } from '@/types'
+import { TechIcon } from '@/components/ui/tech-icons'
 
 const containerVariants = {
   hidden: { opacity: 0 },
@@ -288,7 +289,10 @@ export function SkillsPage() {
                       <div className="space-y-4">
                         {/* Skill Header */}
                         <div className="flex items-center justify-between">
-                          <h3 className="font-semibold">{skill.name}</h3>
+                          <div className="flex items-center space-x-2">
+                            <TechIcon name={skill.name} size={50} />
+                            <h3 className="font-semibold">{skill.name}</h3>
+                          </div>
                           <div className="flex items-center space-x-1">
                             {[...Array(4)].map((_, i) => (
                               <Star

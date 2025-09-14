@@ -12,6 +12,7 @@ import { Code, Server, Cloud, Brain, Database, Wrench } from 'lucide-react'
 import { cn, getSkillLevelColor, getSkillLevelBgColor } from '@/lib/utils'
 import skillsData from '@/data/skills.json'
 import type { Skill } from '@/types'
+import { TechIcon } from '@/components/ui/tech-icons'
 
 const containerVariants = {
   hidden: { opacity: 0 },
@@ -147,7 +148,10 @@ export function SkillsOverview() {
                         <div className="space-y-3">
                           {/* Skill Name and Level */}
                           <div className="flex items-center justify-between">
-                            <h4 className="font-medium">{skill.name}</h4>
+                            <div className="flex items-center space-x-2">
+                              <TechIcon name={skill.name} size={40} />
+                              <h4 className="font-medium">{skill.name}</h4>
+                            </div>
                             <span className={cn(
                               'inline-flex items-center rounded-full px-2 py-1 text-xs font-medium',
                               getSkillLevelBgColor(skill.level),

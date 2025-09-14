@@ -60,7 +60,7 @@ const ctaOptions = [
     title: 'Send Email',
     description: 'Get in touch directly via email',
     icon: Mail,
-    href: 'mailto:vladislav.khmelnytsky@email.com',
+    href: 'mailto:courage020119@gmail.com',
     variant: 'default' as const
   },
   {

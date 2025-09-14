@@ -1,9 +1,17 @@
 /**
- * @fileoverview Tech stack icons component
- * Provides SVG icons for various technologies used in projects
+ * @fileoverview Tech stack icons using Font Awesome and custom SVGs
+ * Features professional brand icons at 2.5x scale
  */
 
+'use client'
+
 import React from 'react'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { 
+  faReact, faNodeJs, faVuejs, faJs, faPhp, faPython, faDocker, 
+  faAws, faGitAlt, faLaravel, faHtml5, faCss3Alt, faBootstrap,
+  faGithub, faLinkedin, faTwitter, faDiscord
+} from '@fortawesome/free-brands-svg-icons'
 
 interface TechIconProps {
   name: string
@@ -11,219 +19,270 @@ interface TechIconProps {
   size?: number
 }
 
-export const TechIcon: React.FC<TechIconProps> = ({ name, className = '', size = 24 }) => {
-  const iconProps = {
-    width: size,
-    height: size,
-    className: `inline-block ${className}`,
-    viewBox: '0 0 24 24',
-    fill: 'currentColor'
-  }
+const iconProps = {
+  width: 60,
+  height: 60,
+  viewBox: '0 0 60 60',
+  fill: 'none',
+  xmlns: 'http://www.w3.org/2000/svg'
+}
 
-  const icons: { [key: string]: JSX.Element } = {
-    // Frontend
-    'React': (
-      <svg {...iconProps}>
-        <path d="M14.23 12.004a2.236 2.236 0 0 1-2.235 2.236 2.236 2.236 0 0 1-2.236-2.236 2.236 2.236 0 0 1 2.235-2.236 2.236 2.236 0 0 1 2.236 2.236zm2.648-10.69c-1.346 0-3.107.96-4.888 2.622-1.78-1.653-3.542-2.602-4.887-2.602-.41 0-.783.093-1.106.278-1.375.793-1.683 3.264-.973 6.365C1.98 8.917 0 10.42 0 12.004c0 1.59 1.99 3.097 5.043 3.91.704 3.113.39 5.588-.988 6.38-.32.187-.69.275-1.102.275-1.345 0-3.107-.96-4.888-2.623C-1.161 19.07.001 18.12.001 16.77c0-.41.092-.783.28-1.106.793-1.375 3.264-1.683 6.365-.973C8.917 15.02 10.42 17 12.004 17c1.59 0 3.097-1.99 3.91-5.043 3.113-.704 5.588-.39 6.38.988.187.32.275.69.275 1.102 0 1.345-.96 3.107-2.623 4.888-1.653 1.78-2.602 3.542-2.602 4.887 0 .41.093.783.278 1.106.793 1.375 1.683 3.264.973 6.365C15.02 22.083 17 23.586 17 25.17c0 1.59-1.99 3.097-5.043 3.91-.704 3.113-.39 5.588.988 6.38.32.187.69.275 1.102.275 1.345 0 3.107-.96 4.888-2.623 1.78-1.653 2.602-3.542 2.602-4.887 0-.41-.092-.783-.28-1.106-.793-1.375-3.264-1.683-6.365-.973C15.02 8.917 17 6.914 17 5.33c0-1.59-1.99-3.097-5.043-3.91-.704-3.113-.39-5.588.988-6.38.32-.187.69-.275 1.102-.275z"/>
-      </svg>
-    ),
-    'Vue.js': (
-      <svg {...iconProps}>
-        <path d="M24,1.61H14.06L12,5.16,9.94,1.61H0L12,22.39ZM12,14.08,5.16,2.23H9.59L12,6.41l2.41-4.18H18.84Z"/>
-      </svg>
-    ),
-    'JavaScript': (
-      <svg {...iconProps}>
-        <rect width="18" height="18" x="3" y="3" rx="2" fill="#F7DF1E"/>
-        <path d="M9.5 15.5c0 .8-.7 1.5-1.5 1.5s-1.5-.7-1.5-1.5V8.5c0-.8.7-1.5 1.5-1.5s1.5.7 1.5 1.5v7zm6 0c0 .8-.7 1.5-1.5 1.5s-1.5-.7-1.5-1.5V8.5c0-.8.7-1.5 1.5-1.5s1.5.7 1.5 1.5v7z" fill="#000"/>
-      </svg>
-    ),
-    'TypeScript': (
-      <svg {...iconProps}>
-        <rect width="18" height="18" x="3" y="3" rx="2" fill="#3178C6"/>
-        <path d="M9 9h6v2H9V9zm0 4h6v2H9v-2z" fill="#fff"/>
-        <path d="M12 6l3 3-3 3V6z" fill="#fff"/>
-      </svg>
-    ),
-    'HTML': (
-      <svg {...iconProps}>
-        <path d="M1.5 0h21l-1.91 21.563L11.977 24l-8.565-2.438L1.5 0zm7.031 9.75l-.232-2.718 10.059.003.23-2.622L5.412 4.41l.698 8.01h9.126l-.326 3.426-2.91.804-2.955-.81-.188-2.11H6.248l.33 4.171L12 19.351l5.379-1.443.744-8.157H8.531z" fill="#E34F26"/>
-      </svg>
-    ),
-    'CSS': (
-      <svg {...iconProps}>
-        <path d="M1.5 0h21l-1.91 21.563L11.977 24l-8.565-2.438L1.5 0zm17.09 4.413L5.41 4.41l.213 2.622 10.125.002-.255 2.716h-6.64l.24 2.573h6.182l-.366 3.523-2.91.804-2.956-.81-.188-2.11h-2.61l.29 3.855L12 19.288l5.373-1.53L18.59 4.414z" fill="#1572B6"/>
-      </svg>
-    ),
-    'Bootstrap': (
-      <svg {...iconProps}>
-        <path d="M6.565 0c-.98 0-1.77.79-1.77 1.77v20.46c0 .98.79 1.77 1.77 1.77h10.87c.98 0 1.77-.79 1.77-1.77V1.77C19.205.79 18.415 0 17.435 0H6.565zm10.87 1.77v20.46H6.565V1.77h10.87z" fill="#7952B3"/>
-        <path d="M8.565 3.54h6.87v1.77h-6.87V3.54zm0 3.54h6.87v1.77h-6.87V7.08zm0 3.54h6.87v1.77h-6.87v-1.77zm0 3.54h4.87v1.77h-4.87v-1.77z" fill="#fff"/>
-      </svg>
-    ),
-    'jQuery': (
-      <svg {...iconProps}>
-        <path d="M1.5 0h21l-1.91 21.563L11.977 24l-8.565-2.438L1.5 0zm7.031 9.75l-.232-2.718 10.059.003.23-2.622L5.412 4.41l.698 8.01h9.126l-.326 3.426-2.91.804-2.955-.81-.188-2.11H6.248l.33 4.171L12 19.351l5.379-1.443.744-8.157H8.531z" fill="#0769AD"/>
-      </svg>
-    ),
-    
-    // Backend
-    'Node.js': (
-      <svg {...iconProps}>
-        <path d="M11.998,24c-0.321,0-0.641-0.084-0.922-0.247l-2.936-1.737c-0.438-0.245-0.224-0.332-0.080-0.383 c0.561-0.203,0.641-0.250,1.011-0.465c0.060-0.035,0.137-0.143,0.137-0.143s-0.137-0.108-0.137-0.143c-0.370-0.215-0.450-0.262-1.011-0.465 c-0.144-0.051-0.358-0.138,0.080-0.383l2.936-1.737c0.562-0.333,1.281-0.333,1.844,0l2.936,1.737c0.438,0.245,0.224,0.332,0.080,0.383 c-0.561,0.203-0.641,0.250-1.011,0.465c-0.060,0.035-0.137,0.143-0.137,0.143s0.137,0.108,0.137,0.143c0.370,0.215,0.450,0.262,1.011,0.465 c0.144,0.051,0.358,0.138-0.080,0.383l-2.936,1.737C12.639,23.916,12.319,24,11.998,24z M9.441,20.463c0,0,0.137-0.108,0.137-0.143 c-0.370-0.215-0.450-0.262-1.011-0.465c-0.144-0.051-0.358-0.138,0.080-0.383l2.936-1.737c0.562-0.333,1.281-0.333,1.844,0l2.936,1.737 c0.438,0.245,0.224,0.332,0.080,0.383c-0.561,0.203-0.641,0.250-1.011,0.465c-0.060,0.035-0.137,0.143-0.137,0.143s0.137,0.108,0.137,0.143 c0.370,0.215,0.450,0.262,1.011,0.465c0.144,0.051,0.358,0.138-0.080,0.383l-2.936,1.737c-0.562,0.333-1.281,0.333-1.844,0l-2.936-1.737 c-0.438-0.245-0.224-0.332-0.080-0.383C8.991,20.725,9.071,20.678,9.441,20.463z" fill="#339933"/>
-      </svg>
-    ),
-    'PHP': (
-      <svg {...iconProps}>
-        <path d="M12 0C5.373 0 0 5.373 0 12s5.373 12 12 12 12-5.373 12-12S18.627 0 12 0zm-1.5 18.5c-4.687 0-8.5-3.813-8.5-8.5s3.813-8.5 8.5-8.5 8.5 3.813 8.5 8.5-3.813 8.5-8.5 8.5z" fill="#777BB4"/>
-        <path d="M12 3c-4.971 0-9 4.029-9 9s4.029 9 9 9 9-4.029 9-9-4.029-9-9-9zm0 16c-3.866 0-7-3.134-7-7s3.134-7 7-7 7 3.134 7 7-3.134 7-7 7z" fill="#777BB4"/>
-        <text x="12" y="16" textAnchor="middle" fontSize="8" fill="white">PHP</text>
-      </svg>
-    ),
-    'Laravel': (
-      <svg {...iconProps}>
-        <path d="M12 0C5.373 0 0 5.373 0 12s5.373 12 12 12 12-5.373 12-12S18.627 0 12 0zm-1.5 18.5c-4.687 0-8.5-3.813-8.5-8.5s3.813-8.5 8.5-8.5 8.5 3.813 8.5 8.5-3.813 8.5-8.5 8.5z" fill="#FF2D20"/>
-        <path d="M12 3c-4.971 0-9 4.029-9 9s4.029 9 9 9 9-4.029 9-9-4.029-9-9-9zm0 16c-3.866 0-7-3.134-7-7s3.134-7 7-7 7 3.134 7 7-3.134 7-7 7z" fill="#FF2D20"/>
-        <text x="12" y="16" textAnchor="middle" fontSize="6" fill="white">L</text>
-      </svg>
-    ),
-    'Express.js': (
-      <svg {...iconProps}>
-        <path d="M12 0C5.373 0 0 5.373 0 12s5.373 12 12 12 12-5.373 12-12S18.627 0 12 0zm-1.5 18.5c-4.687 0-8.5-3.813-8.5-8.5s3.813-8.5 8.5-8.5 8.5 3.813 8.5 8.5-3.813 8.5-8.5 8.5z" fill="#000000"/>
-        <text x="12" y="16" textAnchor="middle" fontSize="6" fill="white">E</text>
-      </svg>
-    ),
-    
-    // Database
-    'MongoDB': (
-      <svg {...iconProps}>
-        <path d="M17.193 9.555c-1.264-5.58-4.252-7.414-4.573-7.59-.303-.167-.7-.167-1.003 0-.32.176-3.31 2.01-4.573 7.59-.18.8-.18 1.58 0 2.38.18.8.45 1.58.81 2.32.36.74.81 1.44 1.35 2.08.54.64 1.16 1.22 1.85 1.73.69.51 1.45.95 2.27 1.31.82.36 1.68.64 2.56.84.88.2 1.78.32 2.68.36.9.04 1.8 0 2.68-.12.88-.12 1.74-.32 2.56-.6.82-.28 1.6-.64 2.32-1.08.72-.44 1.38-.96 1.98-1.56.6-.6 1.12-1.26 1.56-1.98.44-.72.8-1.5 1.08-2.32.28-.82.48-1.68.6-2.56.12-.88.16-1.78.12-2.68-.04-.9-.16-1.8-.36-2.68-.2-.88-.48-1.74-.84-2.56-.36-.82-.8-1.58-1.31-2.27-.51-.69-1.09-1.31-1.73-1.85-.64-.54-1.34-.99-2.08-1.35-.74-.36-1.52-.63-2.32-.81z" fill="#47A248"/>
-      </svg>
-    ),
-    'PostgreSQL': (
-      <svg {...iconProps}>
-        <path d="M12 0C5.373 0 0 5.373 0 12s5.373 12 12 12 12-5.373 12-12S18.627 0 12 0zm-1.5 18.5c-4.687 0-8.5-3.813-8.5-8.5s3.813-8.5 8.5-8.5 8.5 3.813 8.5 8.5-3.813 8.5-8.5 8.5z" fill="#336791"/>
-        <text x="12" y="16" textAnchor="middle" fontSize="6" fill="white">PG</text>
-      </svg>
-    ),
-    'MySQL': (
-      <svg {...iconProps}>
-        <path d="M12 0C5.373 0 0 5.373 0 12s5.373 12 12 12 12-5.373 12-12S18.627 0 12 0zm-1.5 18.5c-4.687 0-8.5-3.813-8.5-8.5s3.813-8.5 8.5-8.5 8.5 3.813 8.5 8.5-3.813 8.5-8.5 8.5z" fill="#4479A1"/>
-        <text x="12" y="16" textAnchor="middle" fontSize="6" fill="white">M</text>
-      </svg>
-    ),
-    
-    // DevOps
-    'AWS': (
-      <svg {...iconProps}>
-        <path d="M12 0C5.373 0 0 5.373 0 12s5.373 12 12 12 12-5.373 12-12S18.627 0 12 0zm-1.5 18.5c-4.687 0-8.5-3.813-8.5-8.5s3.813-8.5 8.5-8.5 8.5 3.813 8.5 8.5-3.813 8.5-8.5 8.5z" fill="#FF9900"/>
-        <text x="12" y="16" textAnchor="middle" fontSize="6" fill="white">AWS</text>
-      </svg>
-    ),
-    'Docker': (
-      <svg {...iconProps}>
-        <path d="M12 0C5.373 0 0 5.373 0 12s5.373 12 12 12 12-5.373 12-12S18.627 0 12 0zm-1.5 18.5c-4.687 0-8.5-3.813-8.5-8.5s3.813-8.5 8.5-8.5 8.5 3.813 8.5 8.5-3.813 8.5-8.5 8.5z" fill="#2496ED"/>
-        <text x="12" y="16" textAnchor="middle" fontSize="6" fill="white">D</text>
-      </svg>
-    ),
-    'Kubernetes': (
-      <svg {...iconProps}>
-        <path d="M12 0C5.373 0 0 5.373 0 12s5.373 12 12 12 12-5.373 12-12S18.627 0 12 0zm-1.5 18.5c-4.687 0-8.5-3.813-8.5-8.5s3.813-8.5 8.5-8.5 8.5 3.813 8.5 8.5-3.813 8.5-8.5 8.5z" fill="#326CE5"/>
-        <text x="12" y="16" textAnchor="middle" fontSize="6" fill="white">K8s</text>
-      </svg>
-    ),
-    
-    // AI/ML
-    'AI Integration': (
-      <svg {...iconProps}>
-        <path d="M12 0C5.373 0 0 5.373 0 12s5.373 12 12 12 12-5.373 12-12S18.627 0 12 0zm-1.5 18.5c-4.687 0-8.5-3.813-8.5-8.5s3.813-8.5 8.5-8.5 8.5 3.813 8.5 8.5-3.813 8.5-8.5 8.5z" fill="#FF6B6B"/>
-        <path d="M8 8h8v8H8z" fill="white"/>
-        <path d="M10 10h4v4h-4z" fill="#FF6B6B"/>
-      </svg>
-    ),
-    'OpenAI': (
-      <svg {...iconProps}>
-        <path d="M12 0C5.373 0 0 5.373 0 12s5.373 12 12 12 12-5.373 12-12S18.627 0 12 0zm-1.5 18.5c-4.687 0-8.5-3.813-8.5-8.5s3.813-8.5 8.5-8.5 8.5 3.813 8.5 8.5-3.813 8.5-8.5 8.5z" fill="#412991"/>
-        <text x="12" y="16" textAnchor="middle" fontSize="6" fill="white">AI</text>
-      </svg>
-    ),
-    'LangChain': (
-      <svg {...iconProps}>
-        <path d="M12 0C5.373 0 0 5.373 0 12s5.373 12 12 12 12-5.373 12-12S18.627 0 12 0zm-1.5 18.5c-4.687 0-8.5-3.813-8.5-8.5s3.813-8.5 8.5-8.5 8.5 3.813 8.5 8.5-3.813 8.5-8.5 8.5z" fill="#1C3C3C"/>
-        <text x="12" y="16" textAnchor="middle" fontSize="5" fill="white">LC</text>
-      </svg>
-    ),
-    
-    // Blockchain
-    'Blockchain': (
-      <svg {...iconProps}>
-        <path d="M12 0C5.373 0 0 5.373 0 12s5.373 12 12 12 12-5.373 12-12S18.627 0 12 0zm-1.5 18.5c-4.687 0-8.5-3.813-8.5-8.5s3.813-8.5 8.5-8.5 8.5 3.813 8.5 8.5-3.813 8.5-8.5 8.5z" fill="#F7931A"/>
-        <path d="M8 6h8v2H8V6zm0 4h8v2H8v-2zm0 4h8v2H8v-2z" fill="white"/>
-      </svg>
-    ),
-    
-    // Other
-    'WhatsApp API': (
-      <svg {...iconProps}>
-        <path d="M12 0C5.373 0 0 5.373 0 12s5.373 12 12 12 12-5.373 12-12S18.627 0 12 0zm-1.5 18.5c-4.687 0-8.5-3.813-8.5-8.5s3.813-8.5 8.5-8.5 8.5 3.813 8.5 8.5-3.813 8.5-8.5 8.5z" fill="#25D366"/>
-        <text x="12" y="16" textAnchor="middle" fontSize="6" fill="white">WA</text>
-      </svg>
-    ),
-    'Payment Gateway': (
-      <svg {...iconProps}>
-        <path d="M12 0C5.373 0 0 5.373 0 12s5.373 12 12 12 12-5.373 12-12S18.627 0 12 0zm-1.5 18.5c-4.687 0-8.5-3.813-8.5-8.5s3.813-8.5 8.5-8.5 8.5 3.813 8.5 8.5-3.813 8.5-8.5 8.5z" fill="#00A86B"/>
-        <text x="12" y="16" textAnchor="middle" fontSize="5" fill="white">$</text>
-      </svg>
-    ),
-    'Recommendation Engine': (
-      <svg {...iconProps}>
-        <path d="M12 0C5.373 0 0 5.373 0 12s5.373 12 12 12 12-5.373 12-12S18.627 0 12 0zm-1.5 18.5c-4.687 0-8.5-3.813-8.5-8.5s3.813-8.5 8.5-8.5 8.5 3.813 8.5 8.5-3.813 8.5-8.5 8.5z" fill="#9C27B0"/>
-        <text x="12" y="16" textAnchor="middle" fontSize="5" fill="white">R</text>
-      </svg>
-    ),
-    'Order Tracking': (
-      <svg {...iconProps}>
-        <path d="M12 0C5.373 0 0 5.373 0 12s5.373 12 12 12 12-5.373 12-12S18.627 0 12 0zm-1.5 18.5c-4.687 0-8.5-3.813-8.5-8.5s3.813-8.5 8.5-8.5 8.5 3.813 8.5 8.5-3.813 8.5-8.5 8.5z" fill="#FF9800"/>
-        <text x="12" y="16" textAnchor="middle" fontSize="5" fill="white">OT</text>
-      </svg>
-    ),
-    'Financial Dashboard': (
-      <svg {...iconProps}>
-        <path d="M12 0C5.373 0 0 5.373 0 12s5.373 12 12 12 12-5.373 12-12S18.627 0 12 0zm-1.5 18.5c-4.687 0-8.5-3.813-8.5-8.5s3.813-8.5 8.5-8.5 8.5 3.813 8.5 8.5-3.813 8.5-8.5 8.5z" fill="#4CAF50"/>
-        <text x="12" y="16" textAnchor="middle" fontSize="5" fill="white">FD</text>
-      </svg>
-    ),
-    'Chat Integration': (
-      <svg {...iconProps}>
-        <path d="M12 0C5.373 0 0 5.373 0 12s5.373 12 12 12 12-5.373 12-12S18.627 0 12 0zm-1.5 18.5c-4.687 0-8.5-3.813-8.5-8.5s3.813-8.5 8.5-8.5 8.5 3.813 8.5 8.5-3.813 8.5-8.5 8.5z" fill="#2196F3"/>
-        <text x="12" y="16" textAnchor="middle" fontSize="5" fill="white">C</text>
-      </svg>
-    ),
-    'Real-time Charts': (
-      <svg {...iconProps}>
-        <path d="M12 0C5.373 0 0 5.373 0 12s5.373 12 12 12 12-5.373 12-12S18.627 0 12 0zm-1.5 18.5c-4.687 0-8.5-3.813-8.5-8.5s3.813-8.5 8.5-8.5 8.5 3.813 8.5 8.5-3.813 8.5-8.5 8.5z" fill="#FF5722"/>
-        <text x="12" y="16" textAnchor="middle" fontSize="5" fill="white">RT</text>
-      </svg>
-    ),
-    'Analytics': (
-      <svg {...iconProps}>
-        <path d="M12 0C5.373 0 0 5.373 0 12s5.373 12 12 12 12-5.373 12-12S18.627 0 12 0zm-1.5 18.5c-4.687 0-8.5-3.813-8.5-8.5s3.813-8.5 8.5-8.5 8.5 3.813 8.5 8.5-3.813 8.5-8.5 8.5z" fill="#9C27B0"/>
-        <text x="12" y="16" textAnchor="middle" fontSize="5" fill="white">A</text>
-      </svg>
-    ),
-    'Chat Assistant': (
-      <svg {...iconProps}>
-        <path d="M12 0C5.373 0 0 5.373 0 12s5.373 12 12 12 12-5.373 12-12S18.627 0 12 0zm-1.5 18.5c-4.687 0-8.5-3.813-8.5-8.5s3.813-8.5 8.5-8.5 8.5 3.813 8.5 8.5-3.813 8.5-8.5 8.5z" fill="#00BCD4"/>
-        <text x="12" y="16" textAnchor="middle" fontSize="5" fill="white">CA</text>
-      </svg>
+// Font Awesome icon mappings
+const fontAwesomeIcons: Record<string, any> = {
+  'React': faReact,
+  'Node.js': faNodeJs,
+  'Vue.js': faVuejs,
+  'JavaScript': faJs,
+  'PHP': faPhp,
+  'Python': faPython,
+  'Docker': faDocker,
+  'Amazon Web Services': faAws,
+  'Git': faGitAlt,
+  'Laravel': faLaravel,
+  'HTML5': faHtml5,
+  'CSS3': faCss3Alt,
+  'Bootstrap': faBootstrap
+}
+
+// Custom SVG icons for technologies not in Font Awesome
+const customIcons: Record<string, React.ReactElement> = {
+  'Next.js': (
+    <svg {...iconProps}>
+      <rect width="60" height="60" rx="12" fill="black"/>
+      <path d="M30 5L55 30L30 55L5 30L30 5Z" fill="white"/>
+      <path d="M30 15L45 30L30 45L15 30L30 15Z" fill="black"/>
+      <text x="30" y="40" textAnchor="middle" fontSize="20" fill="white" fontWeight="bold">N</text>
+    </svg>
+  ),
+  'TypeScript': (
+    <svg {...iconProps}>
+      <rect width="60" height="60" rx="12" fill="#3178C6"/>
+      <path d="M30 5L55 30L30 55L5 30L30 5Z" fill="white"/>
+      <path d="M30 15L45 30L30 45L15 30L30 15Z" fill="#3178C6"/>
+      <text x="30" y="40" textAnchor="middle" fontSize="16" fill="white" fontWeight="bold">TS</text>
+    </svg>
+  ),
+  'Tailwind CSS': (
+    <svg {...iconProps}>
+      <rect width="60" height="60" rx="12" fill="#06B6D4"/>
+      <path d="M30 5C15.64 5 5 15.64 5 30s10.64 25 25 25 25-10.64 25-25S44.36 5 30 5z" fill="white"/>
+      <path d="M20 20h20v20H20z" fill="#06B6D4"/>
+      <path d="M25 25h10v10H25z" fill="white"/>
+    </svg>
+  ),
+  'Express.js': (
+    <svg {...iconProps}>
+      <rect width="60" height="60" rx="12" fill="#000000"/>
+      <path d="M30 5L55 30L30 55L5 30L30 5Z" fill="white"/>
+      <path d="M20 20h20v20H20z" fill="black"/>
+      <text x="30" y="40" textAnchor="middle" fontSize="16" fill="white" fontWeight="bold">E</text>
+    </svg>
+  ),
+  'Django': (
+    <svg {...iconProps}>
+      <rect width="60" height="60" rx="12" fill="#092E20"/>
+      <path d="M30 5L55 30L30 55L5 30L30 5Z" fill="white"/>
+      <path d="M20 20h20v20H20z" fill="#092E20"/>
+      <text x="30" y="40" textAnchor="middle" fontSize="16" fill="white" fontWeight="bold">D</text>
+    </svg>
+  ),
+  'FastAPI': (
+    <svg {...iconProps}>
+      <rect width="60" height="60" rx="12" fill="#009688"/>
+      <path d="M30 5L55 30L30 55L5 30L30 5Z" fill="white"/>
+      <path d="M20 20h20v20H20z" fill="#009688"/>
+      <text x="30" y="40" textAnchor="middle" fontSize="14" fill="white" fontWeight="bold">FA</text>
+    </svg>
+  ),
+  'MongoDB': (
+    <svg {...iconProps}>
+      <path d="M30 5C15.64 5 5 15.64 5 30s10.64 25 25 25 25-10.64 25-25S44.36 5 30 5z" fill="#47A248"/>
+      <path d="M30 10C18.95 10 10 18.95 10 30s8.95 20 20 20 20-8.95 20-20-8.95-20-20-20z" fill="white"/>
+      <path d="M20 20h20v20H20z" fill="#47A248"/>
+      <text x="30" y="40" textAnchor="middle" fontSize="16" fill="white" fontWeight="bold">M</text>
+    </svg>
+  ),
+  'PostgreSQL': (
+    <svg {...iconProps}>
+      <rect width="60" height="60" rx="12" fill="#336791"/>
+      <path d="M30 5L55 30L30 55L5 30L30 5Z" fill="white"/>
+      <path d="M20 20h20v20H20z" fill="#336791"/>
+      <text x="30" y="40" textAnchor="middle" fontSize="14" fill="white" fontWeight="bold">PG</text>
+    </svg>
+  ),
+  'Redis': (
+    <svg {...iconProps}>
+      <rect width="60" height="60" rx="12" fill="#DC382D"/>
+      <path d="M30 5L55 30L30 55L5 30L30 5Z" fill="white"/>
+      <path d="M20 20h20v20H20z" fill="#DC382D"/>
+      <text x="30" y="40" textAnchor="middle" fontSize="16" fill="white" fontWeight="bold">R</text>
+    </svg>
+  ),
+  'Kubernetes': (
+    <svg {...iconProps}>
+      <rect width="60" height="60" rx="12" fill="#326CE5"/>
+      <path d="M30 5L55 30L30 55L5 30L30 5Z" fill="white"/>
+      <path d="M20 20h20v20H20z" fill="#326CE5"/>
+      <text x="30" y="40" textAnchor="middle" fontSize="14" fill="white" fontWeight="bold">K8</text>
+    </svg>
+  ),
+  'AWS Lambda': (
+    <svg {...iconProps}>
+      <rect width="60" height="60" rx="12" fill="#FF9900"/>
+      <path d="M30 5L55 30L30 55L5 30L30 5Z" fill="white"/>
+      <path d="M20 20h20v20H20z" fill="#FF9900"/>
+      <text x="30" y="40" textAnchor="middle" fontSize="20" fill="white" fontWeight="bold">λ</text>
+    </svg>
+  ),
+  'Jenkins': (
+    <svg {...iconProps}>
+      <rect width="60" height="60" rx="12" fill="#D24939"/>
+      <path d="M30 5L55 30L30 55L5 30L30 5Z" fill="white"/>
+      <path d="M20 20h20v20H20z" fill="#D24939"/>
+      <text x="30" y="40" textAnchor="middle" fontSize="16" fill="white" fontWeight="bold">J</text>
+    </svg>
+  ),
+  'Terraform': (
+    <svg {...iconProps}>
+      <rect width="60" height="60" rx="12" fill="#623CE4"/>
+      <path d="M30 5L55 30L30 55L5 30L30 5Z" fill="white"/>
+      <path d="M20 20h20v20H20z" fill="#623CE4"/>
+      <text x="30" y="40" textAnchor="middle" fontSize="16" fill="white" fontWeight="bold">T</text>
+    </svg>
+  ),
+  'OpenAI GPT': (
+    <svg {...iconProps}>
+      <rect width="60" height="60" rx="12" fill="#412991"/>
+      <path d="M30 5L55 30L30 55L5 30L30 5Z" fill="white"/>
+      <path d="M20 20h20v20H20z" fill="#412991"/>
+      <text x="30" y="40" textAnchor="middle" fontSize="14" fill="white" fontWeight="bold">AI</text>
+    </svg>
+  ),
+  'LangChain': (
+    <svg {...iconProps}>
+      <rect width="60" height="60" rx="12" fill="#1C3C3C"/>
+      <path d="M30 5L55 30L30 55L5 30L30 5Z" fill="white"/>
+      <path d="M20 20h20v20H20z" fill="#1C3C3C"/>
+      <text x="30" y="40" textAnchor="middle" fontSize="14" fill="white" fontWeight="bold">LC</text>
+    </svg>
+  ),
+  'TensorFlow': (
+    <svg {...iconProps}>
+      <rect width="60" height="60" rx="12" fill="#FF6F00"/>
+      <path d="M30 5L55 30L30 55L5 30L30 5Z" fill="white"/>
+      <path d="M20 20h20v20H20z" fill="#FF6F00"/>
+      <text x="30" y="40" textAnchor="middle" fontSize="14" fill="white" fontWeight="bold">TF</text>
+    </svg>
+  ),
+  'Artificial Intelligence': (
+    <svg {...iconProps}>
+      <rect width="60" height="60" rx="12" fill="#FF6B6B"/>
+      <path d="M30 5L55 30L30 55L5 30L30 5Z" fill="white"/>
+      <path d="M20 20h20v20H20z" fill="#FF6B6B"/>
+      <text x="30" y="40" textAnchor="middle" fontSize="12" fill="white" fontWeight="bold">AI</text>
+    </svg>
+  ),
+  'Blockchain Development': (
+    <svg {...iconProps}>
+      <rect width="60" height="60" rx="12" fill="#F7931A"/>
+      <path d="M30 5L55 30L30 55L5 30L30 5Z" fill="white"/>
+      <path d="M20 20h20v20H20z" fill="#F7931A"/>
+      <text x="30" y="40" textAnchor="middle" fontSize="12" fill="white" fontWeight="bold">BC</text>
+    </svg>
+  ),
+  'Web3': (
+    <svg {...iconProps}>
+      <rect width="60" height="60" rx="12" fill="#627EEA"/>
+      <path d="M30 5L55 30L30 55L5 30L30 5Z" fill="white"/>
+      <path d="M20 20h20v20H20z" fill="#627EEA"/>
+      <text x="30" y="40" textAnchor="middle" fontSize="16" fill="white" fontWeight="bold">W3</text>
+    </svg>
+  ),
+  'Solidity': (
+    <svg {...iconProps}>
+      <rect width="60" height="60" rx="12" fill="#363636"/>
+      <path d="M30 5L55 30L30 55L5 30L30 5Z" fill="white"/>
+      <path d="M20 20h20v20H20z" fill="#363636"/>
+      <text x="30" y="40" textAnchor="middle" fontSize="16" fill="white" fontWeight="bold">S</text>
+    </svg>
+  ),
+  'Smart Contracts': (
+    <svg {...iconProps}>
+      <rect width="60" height="60" rx="12" fill="#4A90E2"/>
+      <path d="M30 5L55 30L30 55L5 30L30 5Z" fill="white"/>
+      <path d="M20 20h20v20H20z" fill="#4A90E2"/>
+      <text x="30" y="40" textAnchor="middle" fontSize="12" fill="white" fontWeight="bold">SC</text>
+    </svg>
+  ),
+  'DApp Development': (
+    <svg {...iconProps}>
+      <rect width="60" height="60" rx="12" fill="#8A2BE2"/>
+      <path d="M30 5L55 30L30 55L5 30L30 5Z" fill="white"/>
+      <path d="M20 20h20v20H20z" fill="#8A2BE2"/>
+      <text x="30" y="40" textAnchor="middle" fontSize="12" fill="white" fontWeight="bold">DA</text>
+    </svg>
+  ),
+  'Trading Bots': (
+    <svg {...iconProps}>
+      <rect width="60" height="60" rx="12" fill="#00D4AA"/>
+      <path d="M30 5L55 30L30 55L5 30L30 5Z" fill="white"/>
+      <path d="M20 20h20v20H20z" fill="#00D4AA"/>
+      <text x="30" y="40" textAnchor="middle" fontSize="12" fill="white" fontWeight="bold">TB</text>
+    </svg>
+  ),
+  'Hardhat': (
+    <svg {...iconProps}>
+      <rect width="60" height="60" rx="12" fill="#F7B500"/>
+      <path d="M30 5L55 30L30 55L5 30L30 5Z" fill="white"/>
+      <path d="M20 20h20v20H20z" fill="#F7B500"/>
+      <text x="30" y="40" textAnchor="middle" fontSize="16" fill="white" fontWeight="bold">H</text>
+    </svg>
+  ),
+  'DeFi': (
+    <svg {...iconProps}>
+      <rect width="60" height="60" rx="12" fill="#00D4AA"/>
+      <path d="M30 5L55 30L30 55L5 30L30 5Z" fill="white"/>
+      <path d="M20 20h20v20H20z" fill="#00D4AA"/>
+      <text x="30" y="40" textAnchor="middle" fontSize="16" fill="white" fontWeight="bold">DF</text>
+    </svg>
+  )
+}
+
+export const TechIcon: React.FC<TechIconProps> = ({ name, className = '', size = 60 }) => {
+  // Check if Font Awesome icon exists
+  const fontAwesomeIcon = fontAwesomeIcons[name]
+  
+  if (fontAwesomeIcon) {
+    return (
+      <div className={`inline-flex items-center justify-center ${className}`} style={{ width: size, height: size }}>
+        <FontAwesomeIcon 
+          icon={fontAwesomeIcon} 
+          style={{ fontSize: size * 0.8 }} 
+          className="text-current"
+        />
+      </div>
     )
   }
 
-  return icons[name] || (
-    <svg {...iconProps}>
-      <circle cx="12" cy="12" r="10" fill="#6B7280"/>
-      <text x="12" y="16" textAnchor="middle" fontSize="8" fill="white">?</text>
-    </svg>
+  // Check if custom SVG icon exists
+  const customIcon = customIcons[name]
+  
+  if (customIcon) {
+    return (
+      <div className={`inline-flex items-center justify-center ${className}`} style={{ width: size, height: size }}>
+        {React.cloneElement(customIcon, { width: size, height: size })}
+      </div>
+    )
+  }
+
+  // Fallback icon for unknown technologies
+  return (
+    <div 
+      className={`flex items-center justify-center rounded-md bg-muted text-muted-foreground ${className}`}
+      style={{ width: size, height: size }}
+    >
+      <span className="text-lg font-bold">{name.charAt(0)}</span>
+    </div>
   )
 }
 
