@@ -11,10 +11,11 @@ export interface Project {
   image: string;
   galleryImages?: string[];
   technologies: string[];
-  category: 'web' | 'mobile' | 'ai' | 'devops' | 'blockchain';
+  category: 'web' | 'mobile' | 'ai' | 'devops' | 'blockchain' | 'automation';
   status: 'completed' | 'in-progress' | 'planned';
   liveUrl?: string;
   githubUrl?: string;
+  resumeUrl?: string;
   featured: boolean;
   startDate: string;
   endDate?: string;

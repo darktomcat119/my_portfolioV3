@@ -10,7 +10,7 @@ import { useInView } from 'framer-motion'
 import { useRef } from 'react'
 import Image from 'next/image'
 import Link from 'next/link'
-import { ArrowLeft, ExternalLink, Github, Calendar, Tag, Award, Clock } from 'lucide-react'
+import { ArrowLeft, ExternalLink, Github, Calendar, Tag, Award, Clock, Download } from 'lucide-react'
 import { Button } from '@/components/ui/button'
 import { cn, formatDate, getCategoryColor } from '@/lib/utils'
 import type { Project } from '@/types'
@@ -121,6 +121,19 @@ export function ProjectDetail({ project }: ProjectDetailProps) {
                       >
                         <Github className="h-4 w-4" />
                         <span>View Code</span>
+                      </a>
+                    </Button>
+                  )}
+                  {project.resumeUrl && (
+                    <Button asChild variant="secondary">
+                      <a 
+                        href={project.resumeUrl}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="flex items-center space-x-2"
+                      >
+                        <Download className="h-4 w-4" />
+                        <span>Download Resume</span>
                       </a>
                     </Button>
                   )}
