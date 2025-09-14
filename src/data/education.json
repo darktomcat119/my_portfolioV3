@@ -1,0 +1,70 @@
+[
+  {
+    "id": "bachelor-software-engineering",
+    "institution": "Vinnytsia National Technical University",
+    "degree": "Bachelor's Degree",
+    "field": "Software Engineering",
+    "startDate": "2014-09-01",
+    "endDate": "2018-06-30",
+    "current": false,
+    "description": "Comprehensive software engineering education with focus on software development, algorithms, data structures, and system design. Completed various projects in web development, database design, and software architecture.",
+    "gpa": "3.7/4.0",
+    "location": "Vinnytsia, Ukraine",
+    "website": "https://vntu.edu.ua"
+  },
+  {
+    "id": "cert-aws-solutions-architect",
+    "institution": "Amazon Web Services",
+    "degree": "AWS Solutions Architect Professional",
+    "field": "Cloud Architecture",
+    "startDate": "2022-03-01",
+    "endDate": "2022-03-31",
+    "current": false,
+    "description": "Professional certification in designing distributed systems on AWS. Covers advanced architectural patterns, security, and cost optimization strategies.",
+    "location": "Online"
+  },
+  {
+    "id": "cert-kubernetes-admin",
+    "institution": "Cloud Native Computing Foundation",
+    "degree": "Certified Kubernetes Administrator (CKA)",
+    "field": "Container Orchestration",
+    "startDate": "2021-11-01",
+    "endDate": "2021-11-30",
+    "current": false,
+    "description": "Hands-on certification demonstrating competency in Kubernetes cluster administration, troubleshooting, and application lifecycle management.",
+    "location": "Online"
+  },
+  {
+    "id": "cert-ai-ml",
+    "institution": "Stanford University",
+    "degree": "Machine Learning Specialization",
+    "field": "Artificial Intelligence",
+    "startDate": "2022-06-01",
+    "endDate": "2022-09-30",
+    "current": false,
+    "description": "Comprehensive machine learning course covering supervised and unsupervised learning, neural networks, and deep learning applications.",
+    "location": "Online"
+  },
+  {
+    "id": "cert-blockchain",
+    "institution": "ConsenSys Academy",
+    "degree": "Blockchain Developer Bootcamp",
+    "field": "Blockchain Development",
+    "startDate": "2021-01-01",
+    "endDate": "2021-04-30",
+    "current": false,
+    "description": "Intensive bootcamp covering Ethereum development, smart contracts, DeFi protocols, and Web3 integration.",
+    "location": "Online"
+  },
+  {
+    "id": "cert-devops",
+    "institution": "Linux Foundation",
+    "degree": "DevOps Engineer Certification",
+    "field": "DevOps",
+    "startDate": "2020-08-01",
+    "endDate": "2020-11-30",
+    "current": false,
+    "description": "Comprehensive DevOps certification covering CI/CD, infrastructure automation, monitoring, and security practices.",
+    "location": "Online"
+  }
+]

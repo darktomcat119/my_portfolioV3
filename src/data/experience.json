@@ -1,0 +1,77 @@
+[
+  {
+    "id": "senior-fullstack-softserve",
+    "company": "SoftServe Digital Solutions",
+    "position": "Senior Full Stack Developer",
+    "location": "Lviv, Ukraine",
+    "startDate": "2022-03-01",
+    "endDate": "2024-04-30",
+    "current": false,
+    "description": "Led a team of developers working on a cloud-based platform for automating business processes in the healthcare sector. Developed both frontend (React) and backend (Node.js, MongoDB) solutions, integrating third-party APIs, and ensuring the platform's scalability.",
+    "responsibilities": [
+      "Developed both frontend (React) and backend (Node.js, MongoDB) solutions",
+      "Integrated third-party APIs for healthcare data management",
+      "Ensured platform scalability and performance optimization",
+      "Led a team of developers on cloud-based healthcare automation platform",
+      "Optimized real-time data processing features using WebSockets",
+      "Enhanced system responsiveness for healthcare data management"
+    ],
+    "technologies": ["React", "Node.js", "MongoDB", "WebSockets", "AWS", "TypeScript", "JavaScript"],
+    "achievements": [
+      "Improved healthcare data management through automated business processes",
+      "Enhanced system responsiveness with real-time data processing",
+      "Successfully led team development of cloud-based platform",
+      "Optimized WebSocket implementation for better real-time performance"
+    ]
+  },
+  {
+    "id": "senior-backend-luxoft",
+    "company": "Luxoft Ukraine",
+    "position": "Senior Backend Developer",
+    "location": "Kyiv, Ukraine",
+    "startDate": "2019-07-01",
+    "endDate": "2022-02-28",
+    "current": false,
+    "description": "Worked as a Senior Backend Developer on a high-performance data processing platform for the financial industry. Built secure, scalable backend services and optimized the platform to handle massive data throughput in real-time.",
+    "responsibilities": [
+      "Built secure, scalable backend services for financial industry",
+      "Optimized platform to handle massive data throughput in real-time",
+      "Used Node.js and PostgreSQL to improve backend infrastructure",
+      "Worked closely with DevOps team to deploy and monitor services on AWS",
+      "Ensured high availability and minimal latency for users",
+      "Developed high-performance data processing solutions"
+    ],
+    "technologies": ["Node.js", "PostgreSQL", "AWS", "Docker", "Kubernetes", "JavaScript", "Redis"],
+    "achievements": [
+      "Optimized platform for high-performance data processing",
+      "Ensured high availability and minimal latency for financial services",
+      "Successfully deployed and monitored services on AWS",
+      "Improved backend infrastructure using Node.js and PostgreSQL"
+    ]
+  },
+  {
+    "id": "backend-developer-codecontrol",
+    "company": "CodeControl",
+    "position": "Backend Developer",
+    "location": "Amsterdam, Netherlands",
+    "startDate": "2016-03-01",
+    "endDate": "2019-06-30",
+    "current": false,
+    "description": "Worked on several e-commerce projects as a backend developer, focusing on building secure and scalable solutions for clients in various industries. Developed custom payment gateway integration for global online retailers.",
+    "responsibilities": [
+      "Developed secure and scalable backend solutions for e-commerce projects",
+      "Built custom payment gateway integration for global online retailers",
+      "Utilized Node.js and MySQL for secure, real-time transaction processing",
+      "Optimized backend architecture to handle high volume of users and data",
+      "Worked remotely with cross-functional teams for seamless integration",
+      "Ensured high performance and security for payment processing"
+    ],
+    "technologies": ["Node.js", "MySQL", "JavaScript", "Express.js", "Payment APIs", "REST APIs"],
+    "achievements": [
+      "Successfully developed custom payment gateway integration",
+      "Optimized backend architecture for high-volume e-commerce",
+      "Ensured secure, real-time transaction processing",
+      "Delivered scalable solutions for various industry clients"
+    ]
+  }
+]

@@ -1,0 +1,162 @@
+[
+  {
+    "id": "react",
+    "name": "React",
+    "category": "frontend",
+    "level": "expert",
+    "yearsOfExperience": 6,
+    "description": "Advanced React development with hooks, context, and performance optimization"
+  },
+  {
+    "id": "nodejs",
+    "name": "Node.js",
+    "category": "backend",
+    "level": "expert",
+    "yearsOfExperience": 5,
+    "description": "Server-side JavaScript development with Express, Fastify, and microservices"
+  },
+  {
+    "id": "typescript",
+    "name": "TypeScript",
+    "category": "frontend",
+    "level": "expert",
+    "yearsOfExperience": 4,
+    "description": "Type-safe JavaScript development for scalable applications"
+  },
+  {
+    "id": "mongodb",
+    "name": "MongoDB",
+    "category": "database",
+    "level": "advanced",
+    "yearsOfExperience": 5,
+    "description": "NoSQL database design, optimization, and aggregation pipelines"
+  },
+  {
+    "id": "laravel",
+    "name": "Laravel",
+    "category": "backend",
+    "level": "advanced",
+    "yearsOfExperience": 4,
+    "description": "PHP framework for rapid web application development"
+  },
+  {
+    "id": "nextjs",
+    "name": "Next.js",
+    "category": "frontend",
+    "level": "expert",
+    "yearsOfExperience": 3,
+    "description": "React framework for production-ready applications with SSR/SSG"
+  },
+  {
+    "id": "docker",
+    "name": "Docker",
+    "category": "devops",
+    "level": "advanced",
+    "yearsOfExperience": 4,
+    "description": "Containerization and orchestration for scalable deployments"
+  },
+  {
+    "id": "kubernetes",
+    "name": "Kubernetes",
+    "category": "devops",
+    "level": "advanced",
+    "yearsOfExperience": 3,
+    "description": "Container orchestration and microservices management"
+  },
+  {
+    "id": "aws",
+    "name": "Amazon Web Services",
+    "category": "devops",
+    "level": "advanced",
+    "yearsOfExperience": 4,
+    "description": "Cloud infrastructure and services management"
+  },
+  {
+    "id": "openai",
+    "name": "OpenAI GPT",
+    "category": "ai",
+    "level": "advanced",
+    "yearsOfExperience": 2,
+    "description": "AI integration and prompt engineering for intelligent applications"
+  },
+  {
+    "id": "langchain",
+    "name": "LangChain",
+    "category": "ai",
+    "level": "intermediate",
+    "yearsOfExperience": 1,
+    "description": "Framework for building LLM-powered applications"
+  },
+  {
+    "id": "solidity",
+    "name": "Solidity",
+    "category": "blockchain",
+    "level": "intermediate",
+    "yearsOfExperience": 2,
+    "description": "Smart contract development for Ethereum blockchain"
+  },
+  {
+    "id": "postgresql",
+    "name": "PostgreSQL",
+    "category": "database",
+    "level": "advanced",
+    "yearsOfExperience": 4,
+    "description": "Relational database design and optimization"
+  },
+  {
+    "id": "redis",
+    "name": "Redis",
+    "category": "database",
+    "level": "advanced",
+    "yearsOfExperience": 3,
+    "description": "In-memory data structure store for caching and sessions"
+  },
+  {
+    "id": "git",
+    "name": "Git",
+    "category": "tools",
+    "level": "expert",
+    "yearsOfExperience": 6,
+    "description": "Version control and collaborative development"
+  },
+  {
+    "id": "jenkins",
+    "name": "Jenkins",
+    "category": "devops",
+    "level": "intermediate",
+    "yearsOfExperience": 2,
+    "description": "CI/CD pipeline automation and deployment"
+  },
+  {
+    "id": "terraform",
+    "name": "Terraform",
+    "category": "devops",
+    "level": "intermediate",
+    "yearsOfExperience": 2,
+    "description": "Infrastructure as code for cloud resource management"
+  },
+  {
+    "id": "vuejs",
+    "name": "Vue.js",
+    "category": "frontend",
+    "level": "advanced",
+    "yearsOfExperience": 3,
+    "description": "Progressive JavaScript framework for building user interfaces"
+  },
+  {
+    "id": "express",
+    "name": "Express.js",
+    "category": "backend",
+    "level": "expert",
+    "yearsOfExperience": 5,
+    "description": "Web application framework for Node.js"
+  },
+  {
+    "id": "tailwindcss",
+    "name": "Tailwind CSS",
+    "category": "frontend",
+    "level": "advanced",
+    "yearsOfExperience": 3,
+    "description": "Utility-first CSS framework for rapid UI development"
+  }
+]

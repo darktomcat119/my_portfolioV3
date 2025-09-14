@@ -1,0 +1,127 @@
+[
+  {
+    "id": "grow-saas-tasklist",
+    "title": "Grow SaaS - TaskList CRM",
+    "description": "TaskList CRM – Simplified Client and Project Management platform built to help businesses manage clients, projects, tasks, and leads efficiently.",
+    "longDescription": "TaskList is a comprehensive CRM platform developed with Laravel, PostgreSQL, jQuery, and Bootstrap. It offers client & project management with real-time updates, lead management with clear progress tracking, AI insights for analyzing client and project status, and WhatsApp integration for seamless client communication. The platform simplifies workflow, improving efficiency and client engagement.",
+    "image": "/images/portfolios/demo.tasklist.com.ar/main.png",
+    "galleryImages": [
+      "/images/portfolios/demo.tasklist.com.ar/Picture.png",
+      "/images/portfolios/demo.tasklist.com.ar/Picture1.png",
+      "/images/portfolios/demo.tasklist.com.ar/Picture2.png",
+      "/images/portfolios/demo.tasklist.com.ar/Picture3.png",
+      "/images/portfolios/demo.tasklist.com.ar/Picture4.png",
+      "/images/portfolios/demo.tasklist.com.ar/Picture5.png",
+      "/images/portfolios/demo.tasklist.com.ar/Picture6.png",
+      "/images/portfolios/demo.tasklist.com.ar/Picture7.png",
+      "/images/portfolios/demo.tasklist.com.ar/sub1.png"
+    ],
+    "technologies": ["Laravel", "PostgreSQL", "jQuery", "Bootstrap", "PHP", "MySQL", "WhatsApp API", "AI Integration"],
+    "category": "web",
+    "status": "completed",
+    "liveUrl": "https://demo.tasklist.com.ar/",
+    "githubUrl": "https://github.com/darktomcat119/Grow_SaaS",
+    "featured": true,
+    "startDate": "2023-01-01",
+    "endDate": "2023-12-31"
+  },
+  {
+    "id": "gizmo-buy",
+    "title": "GizmoBuy",
+    "description": "A gadget store offering a personalized recommendation system, allowing customers to find tech items based on their preferences.",
+    "longDescription": "GizmoBuy is an innovative e-commerce platform that provides personalized product recommendations for tech gadgets. Built with Vue.js frontend and Node.js backend with MongoDB database, the platform features intelligent recommendation algorithms that help customers discover the perfect tech items based on their preferences, browsing history, and purchase patterns.",
+    "image": "/images/portfolios/gizmobuy.com/main.png",
+    "galleryImages": [
+      "/images/portfolios/gizmobuy.com/Screenshot_1.png",
+      "/images/portfolios/gizmobuy.com/sub1.png",
+      "/images/portfolios/gizmobuy.com/sub2.png",
+      "/images/portfolios/gizmobuy.com/sub3.png"
+    ],
+    "technologies": ["Vue.js", "Node.js", "MongoDB", "JavaScript", "Express.js", "Recommendation Engine"],
+    "category": "web",
+    "status": "completed",
+    "liveUrl": "https://www.gizmobuy.com",
+    "githubUrl": "",
+    "featured": true,
+    "startDate": "2022-01-01",
+    "endDate": "2022-12-31"
+  },
+  {
+    "id": "gizmos-tech",
+    "title": "GizmosTech",
+    "description": "A marketplace for electronic gadgets and tech accessories, featuring secure payments and order tracking.",
+    "longDescription": "GizmosTech is a comprehensive e-commerce marketplace specializing in electronic gadgets and tech accessories. Built with React frontend and Node.js backend with MongoDB database, the platform features secure payment processing, real-time order tracking, inventory management, and user-friendly interface for both buyers and sellers.",
+    "image": "/images/portfolios/gizmostech/main.png",
+    "galleryImages": [
+      "/images/portfolios/gizmostech/sub1.png",
+      "/images/portfolios/gizmostech/sub2.png",
+      "/images/portfolios/gizmostech/sub3.png"
+    ],
+    "technologies": ["React", "Node.js", "MongoDB", "JavaScript", "Payment Gateway", "Order Tracking"],
+    "category": "web",
+    "status": "completed",
+    "liveUrl": "https://www.gizmostech.com",
+    "githubUrl": "",
+    "featured": true,
+    "startDate": "2021-06-01",
+    "endDate": "2022-06-30"
+  },
+  {
+    "id": "crm-workspace",
+    "title": "CRM Workspace",
+    "description": "A platform focused on streamlining client management, project tracking, and communication for businesses with financial dashboard and chat functionality.",
+    "longDescription": "CRM Workspace is a comprehensive platform designed to streamline client management, project tracking, and communication for businesses. It includes a financial dashboard with chat functionality for real-time analysis and insights into customer financial activities, project budgets, and sales data. Built with React, Node.js, MongoDB, and PostgreSQL for optimal performance and scalability.",
+    "image": "/images/portfolios/crmworkspace.com/main.png",
+    "galleryImages": [
+      "/images/portfolios/crmworkspace.com/sub1.png",
+      "/images/portfolios/crmworkspace.com/sub2.png",
+      "/images/portfolios/crmworkspace.com/sub3.png"
+    ],
+    "technologies": ["React", "Node.js", "MongoDB", "PostgreSQL", "JavaScript", "Financial Dashboard", "Chat Integration"],
+    "category": "web",
+    "status": "completed",
+    "liveUrl": "https://app.crmworkspace.com",
+    "githubUrl": "",
+    "featured": false,
+    "startDate": "2020-09-01",
+    "endDate": "2021-12-31"
+  },
+  {
+    "id": "coingecko-clone",
+    "title": "CoinGecko Clone",
+    "description": "A cryptocurrency tracking platform offering market data, charts, and coin analysis with real-time charts and chat functionality.",
+    "longDescription": "CoinGecko is a comprehensive cryptocurrency tracking platform that provides real-time market data, interactive charts, and detailed coin analysis. The platform includes real-time charts for cryptocurrency prices and features a chat functionality for market analysis and recommendations. Built with React, Node.js, MongoDB, and blockchain integration for accurate and up-to-date cryptocurrency data.",
+    "image": "/images/portfolios/coingecko.com/main.png",
+    "galleryImages": [
+      "/images/portfolios/coingecko.com/sub1.png",
+      "/images/portfolios/coingecko.com/sub2.png"
+    ],
+    "technologies": ["React", "Node.js", "MongoDB", "Blockchain", "JavaScript", "Real-time Charts", "Chat Integration"],
+    "category": "web",
+    "status": "completed",
+    "liveUrl": "https://www.coingecko.com",
+    "githubUrl": "",
+    "featured": false,
+    "startDate": "2020-03-01",
+    "endDate": "2021-03-31"
+  },
+  {
+    "id": "fullcircl-platform",
+    "title": "FullCircl Platform",
+    "description": "A customer lifecycle management platform that provides real-time insights and analytics to help businesses improve customer engagement and retention.",
+    "longDescription": "FullCircl is an advanced customer lifecycle management platform that provides real-time insights and analytics to help businesses improve customer engagement and retention. The platform integrates AI-driven analytics and interactive charts that enable businesses to visualize customer data, predict churn, and identify growth opportunities. It features an AI chat assistant to help users interpret trends, customer behaviors, and provide recommendations. Built with React, Node.js, PostgreSQL, and AI integration.",
+    "image": "/images/portfolios/fullcircl.com/main.png",
+    "galleryImages": [
+      "/images/portfolios/fullcircl.com/sub1.png",
+      "/images/portfolios/fullcircl.com/sub2.png"
+    ],
+    "technologies": ["React", "Node.js", "PostgreSQL", "AI Integration", "JavaScript", "Analytics", "Chat Assistant"],
+    "category": "ai",
+    "status": "completed",
+    "liveUrl": "https://www.fullcircl.com",
+    "githubUrl": "",
+    "featured": false,
+    "startDate": "2021-01-01",
+    "endDate": "2022-12-31"
+  }
+]
