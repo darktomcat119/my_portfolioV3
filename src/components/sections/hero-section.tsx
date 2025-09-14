@@ -132,6 +132,18 @@ export function HeroSection() {
                   Get In Touch
                 </Link>
               </Button>
+
+              <Button asChild variant="secondary" size="lg" className="group">
+                <a 
+                  href="/resume/Vladislav_Khmelnytsky_Resume.pdf"
+                  download="Vladislav_Khmelnytsky_Resume.pdf"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <Download className="mr-2 h-4 w-4" />
+                  Download Resume
+                </a>
+              </Button>
             </motion.div>
 
             {/* Social Links */}

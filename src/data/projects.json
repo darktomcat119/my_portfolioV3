@@ -26,6 +26,25 @@
     "endDate": "2023-12-31"
   },
   {
+    "id": "whatsapp-crm-bot",
+    "title": "WhatsApp CRM Bot & Integration",
+    "description": "Advanced WhatsApp bot integrated with CRM platform for automated customer support, lead management, and real-time communication. Solves critical customer engagement challenges with intelligent automation.",
+    "longDescription": "A sophisticated WhatsApp Business API integration that transforms customer communication through intelligent automation. The bot handles lead qualification, appointment scheduling, customer support tickets, and real-time CRM synchronization. Built with Node.js, Express.js, and integrated with existing CRM systems, it provides seamless two-way communication while maintaining data integrity and user privacy. The solution addresses critical business challenges including 24/7 customer availability, lead response time optimization, and automated workflow management.",
+    "image": "/images/portfolios/whatsapp-crm-bot/main.png",
+    "galleryImages": [
+      "/images/portfolios/whatsapp-crm-bot/main.png",
+      "/images/portfolios/whatsapp-crm-bot/sub1.png"
+    ],
+    "technologies": ["Node.js", "Express.js", "WhatsApp Business API", "MongoDB", "Webhook Integration", "REST API", "JavaScript", "Socket.io", "Redis", "JWT Authentication"],
+    "category": "automation",
+    "status": "completed",
+    "liveUrl": "https://whatsapp-crm-bot.demo.com",
+    "githubUrl": "https://github.com/darktomcat119/whatsapp-crm-bot",
+    "featured": true,
+    "startDate": "2024-01-01",
+    "endDate": "2024-06-30"
+  },
+  {
     "id": "gizmo-buy",
     "title": "GizmoBuy",
     "description": "A gadget store offering a personalized recommendation system, allowing customers to find tech items based on their preferences.",
