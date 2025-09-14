@@ -13,6 +13,7 @@ import { ThemeProvider } from '@/components/theme-provider'
 const inter = Inter({ subsets: ['latin'] })
 
 export const metadata: Metadata = {
+  metadataBase: new URL('https://vladislav-portfolio.com'),
   title: {
     default: 'Vladislav Khmelnytsky - Senior Full-Stack Developer',
     template: '%s | Vladislav Khmelnytsky'
@@ -37,13 +38,13 @@ export const metadata: Metadata = {
   openGraph: {
     type: 'website',
     locale: 'en_US',
-    url: 'https://vladislav-portfolio.com',
+    url: '/',
     title: 'Vladislav Khmelnytsky - Senior Full-Stack Developer',
     description: 'Senior Full-Stack Developer specializing in MERN Stack, Laravel, AI Automation, and DevOps.',
     siteName: 'Vladislav Khmelnytsky Portfolio',
     images: [
       {
-        url: 'https://vladislav-portfolio.com/og-image.jpg',
+        url: '/og-image.jpg',
         width: 1200,
         height: 630,
         alt: 'Vladislav Khmelnytsky - Senior Full-Stack Developer'
@@ -54,7 +55,7 @@ export const metadata: Metadata = {
     card: 'summary_large_image',
     title: 'Vladislav Khmelnytsky - Senior Full-Stack Developer',
     description: 'Senior Full-Stack Developer specializing in MERN Stack, Laravel, AI Automation, and DevOps.',
-    images: ['https://vladislav-portfolio.com/og-image.jpg'],
+    images: ['/og-image.jpg'],
     creator: '@vladislav_dev'
   },
   robots: {
