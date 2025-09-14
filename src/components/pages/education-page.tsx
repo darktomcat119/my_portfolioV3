@@ -70,9 +70,9 @@ const timelineVariants = {
   }
 }
 
-// Separate education and certifications
-const educationItems = educationData.filter(item => !item.issuer)
-const certifications = educationData.filter(item => item.issuer) as Certification[]
+// All items are education since we removed certifications
+const educationItems = educationData as Education[]
+const certifications: Certification[] = []
 
 const getCertificationColor = (issuer: string) => {
   const colors: Record<string, string> = {

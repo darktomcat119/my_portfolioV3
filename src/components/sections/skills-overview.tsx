@@ -71,7 +71,7 @@ export function SkillsOverview() {
   const isInView = useInView(ref, { once: true, margin: '-100px' })
 
   // Group skills by category
-  const skillsByCategory = skillsData.reduce((acc, skill: Skill) => {
+  const skillsByCategory = (skillsData as Skill[]).reduce((acc, skill: Skill) => {
     if (!acc[skill.category]) {
       acc[skill.category] = []
     }
