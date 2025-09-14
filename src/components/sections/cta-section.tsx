@@ -99,9 +99,9 @@ export function CtaSection() {
               <span className="gradient-text">Amazing?</span>
             </h2>
             <p className="text-lg text-muted-foreground max-w-3xl mx-auto">
-              I'm always excited to work on new projects and collaborate with passionate people. 
+              I&apos;m always excited to work on new projects and collaborate with passionate people. 
               Whether you have a specific project in mind or just want to chat about technology, 
-              I'd love to hear from you.
+              I&apos;d love to hear from you.
             </p>
           </motion.div>
 
@@ -113,7 +113,7 @@ export function CtaSection() {
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Button asChild size="lg" className="group">
                 <Link href="/contact">
-                  Let's Work Together
+                  Let&apos;s Work Together
                   <ArrowRight className="ml-2 h-4 w-4 transition-transform group-hover:translate-x-1" />
                 </Link>
               </Button>

@@ -133,7 +133,7 @@ export function Footer() {
               
               <div className="text-sm text-muted-foreground">
                 <p>Available for freelance projects</p>
-                <p className="mt-1">Let's build something amazing together!</p>
+                <p className="mt-1">Let&apos;s build something amazing together!</p>
               </div>
             </div>
           </div>

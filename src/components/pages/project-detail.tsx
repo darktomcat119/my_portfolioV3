@@ -271,7 +271,7 @@ export function ProjectDetail({ project }: ProjectDetailProps) {
               <div className="rounded-lg border bg-card p-6 text-center">
                 <h3 className="text-lg font-semibold mb-2">Interested in This Project?</h3>
                 <p className="text-sm text-muted-foreground mb-4">
-                  Let's discuss how we can work together on similar projects.
+                  Let&apos;s discuss how we can work together on similar projects.
                 </p>
                 <Button asChild className="w-full">
                   <Link href="/contact">Get In Touch</Link>

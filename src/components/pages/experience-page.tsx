@@ -322,8 +322,8 @@ export function ExperiencePage() {
               <div className="space-y-4">
                 <h3 className="text-xl font-semibold">Interested in Working Together?</h3>
                 <p className="text-muted-foreground max-w-2xl mx-auto">
-                  I'm always open to discussing new opportunities and exciting projects. 
-                  Let's connect and explore how we can work together to build something amazing.
+                  I&apos;m always open to discussing new opportunities and exciting projects. 
+                  Let&apos;s connect and explore how we can work together to build something amazing.
                 </p>
                 <div className="flex flex-col sm:flex-row gap-4 justify-center">
                   <Button asChild>

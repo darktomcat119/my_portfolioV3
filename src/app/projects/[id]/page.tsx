@@ -15,13 +15,13 @@ interface ProjectPageProps {
 }
 
 export async function generateStaticParams() {
-  return projectsData.map((project: Project) => ({
+  return (projectsData as Project[]).map((project: Project) => ({
     id: project.id,
   }))
 }
 
 export async function generateMetadata({ params }: ProjectPageProps) {
-  const project = projectsData.find((p: Project) => p.id === params.id)
+  const project = (projectsData as Project[]).find((p: Project) => p.id === params.id)
   
   if (!project) {
     return {
@@ -41,7 +41,7 @@ export async function generateMetadata({ params }: ProjectPageProps) {
 }
 
 export default function ProjectPage({ params }: ProjectPageProps) {
-  const project = projectsData.find((p: Project) => p.id === params.id)
+  const project = (projectsData as Project[]).find((p: Project) => p.id === params.id)
   
   if (!project) {
     notFound()

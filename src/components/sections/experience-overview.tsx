@@ -189,7 +189,7 @@ export function ExperienceOverview() {
           >
             <h3 className="text-lg font-semibold mb-2">Interested in Working Together?</h3>
             <p className="text-muted-foreground mb-4">
-              I'm always open to discussing new opportunities and exciting projects.
+              I&apos;m always open to discussing new opportunities and exciting projects.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <a

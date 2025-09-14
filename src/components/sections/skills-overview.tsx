@@ -71,7 +71,7 @@ export function SkillsOverview() {
   const isInView = useInView(ref, { once: true, margin: '-100px' })
 
   // Group skills by category
-  const skillsByCategory = skillsData.reduce((acc, skill: Skill) => {
+  const skillsByCategory = (skillsData as Skill[]).reduce((acc, skill: Skill) => {
     if (!acc[skill.category]) {
       acc[skill.category] = []
     }
@@ -201,7 +201,7 @@ export function SkillsOverview() {
           >
             <h3 className="text-lg font-semibold mb-2">Continuous Learning</h3>
             <p className="text-muted-foreground mb-4">
-              I'm constantly exploring new technologies and improving my skills. 
+              I&apos;m constantly exploring new technologies and improving my skills. 
               Currently focused on AI/ML integration, cloud architecture, and blockchain development.
             </p>
             <div className="flex flex-wrap justify-center gap-2">

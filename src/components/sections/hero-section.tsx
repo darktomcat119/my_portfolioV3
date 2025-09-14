@@ -95,7 +95,7 @@ export function HeroSection() {
                 className="text-4xl font-bold tracking-tight sm:text-5xl lg:text-6xl"
                 variants={itemVariants}
               >
-                Hi, I'm{' '}
+                Hi, I&apos;m{' '}
                 <span className="gradient-text">
                   {personalData.name.split(' ')[0]}
                 </span>

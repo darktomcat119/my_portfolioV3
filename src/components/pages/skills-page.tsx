@@ -91,7 +91,7 @@ export function SkillsPage() {
   const isInView = useInView(ref, { once: true, margin: '-100px' })
 
   // Group skills by category
-  const skillsByCategory = skillsData.reduce((acc, skill: Skill) => {
+  const skillsByCategory = (skillsData as Skill[]).reduce((acc, skill: Skill) => {
     if (!acc[skill.category]) {
       acc[skill.category] = []
     }
@@ -371,7 +371,7 @@ export function SkillsPage() {
 
                 {/* All Skills Overview */}
                 <div className="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">
-                  {skillsData.slice(0, 9).map((skill: Skill) => (
+                  {(skillsData as Skill[]).slice(0, 9).map((skill: Skill) => (
                     <motion.div
                       key={skill.id}
                       variants={cardVariants}

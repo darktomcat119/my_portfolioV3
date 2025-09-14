@@ -1,6 +1,6 @@
 'use client'
 
-import { useState, useEffect } from 'react'
+import { useState, useEffect, useCallback } from 'react'
 import { Dialog, DialogContent, DialogHeader, DialogTitle } from '@/components/ui/dialog'
 import { Button } from '@/components/ui/button'
 import { ChevronLeft, ChevronRight, X } from 'lucide-react'
@@ -19,13 +19,7 @@ export function ProjectImageModal({ isOpen, onClose, projectUrl, projectTitle }:
   const [currentIndex, setCurrentIndex] = useState(0)
   const [isLoading, setIsLoading] = useState(true)
 
-  useEffect(() => {
-    if (isOpen && projectUrl) {
-      loadProjectImages()
-    }
-  }, [isOpen, projectUrl])
-
-  const loadProjectImages = async () => {
+  const loadProjectImages = useCallback(async () => {
     setIsLoading(true)
     try {
       // Get the domain from the URL
@@ -51,7 +45,13 @@ export function ProjectImageModal({ isOpen, onClose, projectUrl, projectTitle }:
     } finally {
       setIsLoading(false)
     }
-  }
+  }, [projectUrl])
+
+  useEffect(() => {
+    if (isOpen && projectUrl) {
+      loadProjectImages()
+    }
+  }, [isOpen, projectUrl, loadProjectImages])
 
   const nextImage = () => {
     setCurrentIndex((prev) => (prev + 1) % images.length)

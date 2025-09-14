@@ -158,11 +158,11 @@ export function ContactPage() {
             transition={{ duration: 0.6 }}
           >
             <h1 className="text-4xl font-bold tracking-tight sm:text-5xl">
-              Let's <span className="gradient-text">Connect</span>
+              Let&apos;s <span className="gradient-text">Connect</span>
             </h1>
             <p className="text-lg text-muted-foreground max-w-3xl mx-auto">
-              I'm always excited to work on new projects and collaborate with passionate people. 
-              Whether you have a specific project in mind or just want to chat about technology, I'd love to hear from you.
+              I&apos;m always excited to work on new projects and collaborate with passionate people. 
+              Whether you have a specific project in mind or just want to chat about technology, I&apos;d love to hear from you.
             </p>
           </motion.div>
         </div>
@@ -238,7 +238,7 @@ export function ContactPage() {
               <div>
                 <h2 className="text-2xl font-bold mb-4">Send a Message</h2>
                 <p className="text-muted-foreground">
-                  Have a project in mind? Let's discuss how we can work together to bring your ideas to life.
+                  Have a project in mind? Let&apos;s discuss how we can work together to bring your ideas to life.
                 </p>
               </div>
 
@@ -327,7 +327,7 @@ export function ContactPage() {
                     animate={{ opacity: 1, y: 0 }}
                     className="rounded-md bg-green-50 p-4 text-green-800 dark:bg-green-900/20 dark:text-green-300"
                   >
-                    Message sent successfully! I'll get back to you soon.
+                    Message sent successfully! I&apos;ll get back to you soon.
                   </motion.div>
                 )}
 
@@ -413,8 +413,8 @@ export function ContactPage() {
                     <span className="font-medium">Available for new projects</span>
                   </div>
                   <p className="text-sm text-muted-foreground">
-                    I'm currently accepting new freelance projects and open to full-time opportunities. 
-                    Let's discuss how we can work together!
+                    I&apos;m currently accepting new freelance projects and open to full-time opportunities. 
+                    Let&apos;s discuss how we can work together!
                   </p>
                   <div className="text-xs text-muted-foreground">
                     <p>• Response time: Within 24 hours</p>
