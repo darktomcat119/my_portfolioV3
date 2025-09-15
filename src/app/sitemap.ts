@@ -4,9 +4,18 @@
  */
 
 import { MetadataRoute } from 'next'
+import projectsData from '@/data/projects.json'
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const baseUrl = 'https://vladislav-portfolio.com'
+  
+  // Generate project pages
+  const projectPages = projectsData.map((project) => ({
+    url: `${baseUrl}/projects/${project.id}`,
+    lastModified: new Date(project.endDate),
+    changeFrequency: 'monthly' as const,
+    priority: 0.6,
+  }))
   
   return [
     {
@@ -45,5 +54,6 @@ export default function sitemap(): MetadataRoute.Sitemap {
       changeFrequency: 'monthly',
       priority: 0.7,
     },
+    ...projectPages,
   ]
 }
