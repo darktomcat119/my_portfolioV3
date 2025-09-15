@@ -6,7 +6,6 @@
 import type { Metadata } from 'next'
 import { Inter } from 'next/font/google'
 import './globals.css'
-import '@/lib/fontawesome'
 import { Navigation } from '@/components/navigation'
 import { Footer } from '@/components/footer'
 import { ThemeProvider } from '@/components/theme-provider'

@@ -6,8 +6,8 @@
 'use client'
 
 import { motion } from 'framer-motion'
-import { useInView } from 'framer-motion'
 import { useRef } from 'react'
+import { useHydrationSafeInView } from '@/hooks/use-hydration-safe-inview'
 import { Code, Users, Award, Clock } from 'lucide-react'
 import personalData from '@/data/personal.json'
 
@@ -62,8 +62,7 @@ const stats = [
 ]
 
 export function AboutSection() {
-  const ref = useRef(null)
-  const isInView = useInView(ref, { once: true, margin: '-100px' })
+  const { ref, isInView } = useHydrationSafeInView({ once: true, margin: '-100px' })
 
   return (
     <section ref={ref} className="section-padding bg-muted/30">

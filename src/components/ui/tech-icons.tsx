@@ -9,7 +9,8 @@ import React from 'react'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { 
   faReact, faNodeJs, faVuejs, faJs, faPhp, faPython, faDocker, 
-  faAws, faGitAlt, faLaravel, faHtml5, faCss3Alt, faBootstrap
+  faAws, faGitAlt, faLaravel, faHtml5, faCss3Alt, faBootstrap,
+  faGithub, faLinkedin, faTwitter, faDiscord
 } from '@fortawesome/free-brands-svg-icons'
 
 interface TechIconProps {
