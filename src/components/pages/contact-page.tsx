@@ -98,8 +98,8 @@ const quickActions = [
   },
   {
     icon: Download,
-    title: 'Download Resume',
-    description: 'Get my latest resume',
+    title: 'View Resume',
+    description: 'View my latest resume',
     href: personalData.resumeUrl,
     variant: 'outline' as const
   },

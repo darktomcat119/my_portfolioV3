@@ -199,11 +199,12 @@ export function ExperienceOverview() {
                 Get In Touch
               </a>
               <a
-                href="/resume/Vladislav_Khmelnytsky_Resume.pdf"
-                download
+                href="/resume/Vladislav-Khmelnytsky.pdf"
+                target="_blank"
+                rel="noopener noreferrer"
                 className="inline-flex items-center justify-center rounded-md border border-input bg-background px-6 py-2 text-sm font-medium transition-colors hover:bg-accent hover:text-accent-foreground"
               >
-                Download Resume
+                View Resume
               </a>
             </div>
           </motion.div>

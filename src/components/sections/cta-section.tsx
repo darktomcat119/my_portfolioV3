@@ -71,10 +71,10 @@ const ctaOptions = [
     variant: 'outline' as const
   },
   {
-    title: 'Download Resume',
+    title: 'View Resume',
     description: 'View my detailed resume',
     icon: Download,
-    href: '/resume/Vladislav_Khmelnytsky_Resume.pdf',
+    href: '/resume/Vladislav-Khmelnytsky.pdf',
     variant: 'secondary' as const
   }
 ]

@@ -164,16 +164,17 @@ export function HeroSection() {
               </div>
             </motion.div>
 
-            {/* Download Resume */}
+            {/* View Resume */}
             <motion.div variants={itemVariants}>
               <Button asChild variant="ghost" size="sm" className="group">
                 <a 
                   href={personalData.resumeUrl}
-                  download
+                  target="_blank"
+                  rel="noopener noreferrer"
                   className="flex items-center space-x-2"
                 >
                   <Download className="h-4 w-4" />
-                  <span>Download Resume</span>
+                  <span>View Resume</span>
                 </a>
               </Button>
             </motion.div>
